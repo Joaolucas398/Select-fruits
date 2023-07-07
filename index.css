@@ -1,70 +1,87 @@
-sections{
-    display: flex;
-    justify-content: center
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.first-card{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 600px;
-    height: 484px;
-    background: #e0e0e0;
-    border: 1px solid #C1C1C1;
-    border-radius: 10px;
-    margin-right: 25px;
+sections {
+  display: flex;
+  justify-content: center;
 }
 
-
-.second-card{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 500px;
-    height: 484px;
-    background: #646464;
-    border: 1px solid #C1C1C1;
-    border-radius: 10px;   
+.first-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 600px;
+  height: 484px;
+  background: #e0e0e0;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+  margin-right: 25px;
 }
 
-.title-cards{
-    font-size: x-large;
-    font-weight: bold;
-    font-family: 'Roboto';
-    line-height: 28px;
-    color: #222222;
+.second-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 500px;
+  height: 484px;
+  background: #646464;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
 }
 
-.dropdown{
-    width: 351px;
-    height: 40px;
-    background: #FFFFFF;
-    border: 1px solid #C1C1C1;
-    border-radius: 4px;
+.title-cards {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Roboto";
+  line-height: 28px;
+  color: #222222;
 }
 
-#select-fruits{
-    padding-right: 9.5rem;
+.dropdown {
+  width: 351px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
 }
 
-#first-button{
-    position: relative;
-    bottom: -1rem;
-    width: 205px;
-    height: 42px;
-    background: #984BD6;
-    border-radius: 50px;
+li {
+  display: flex;
+  width: 336px;
+  height: 26px;
+  padding: 7px 0 0 15px;
+  margin: 5px 0 5px 0;
+
+  background: #ffffff;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
+  color: #222222;
+  list-style-type: none;
 }
 
-#second-button{
-    position: relative;
-    width: 117px;
-    height: 36px;
-    left: 180px;
-    bottom: -22rem;
-    background: #6DA2F2;
-    border-radius: 50px;
+#select-fruits {
+  padding-right: 9.5rem;
+}
+
+#first-button {
+  width: 205px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #984bd6;
+  cursor: pointer;
+}
+
+#second-button {
+  position: relative;
+  width: 117px;
+  height: 36px;
+  left: 180px;
+  bottom: -22rem;
+  background: #6da2f2;
+  border-radius: 50px;
 }
