@@ -1,0 +1,70 @@
+sections{
+    display: flex;
+    justify-content: center
+
+}
+
+.first-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 600px;
+    height: 484px;
+    background: #e0e0e0;
+    border: 1px solid #C1C1C1;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+
+.second-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 500px;
+    height: 484px;
+    background: #646464;
+    border: 1px solid #C1C1C1;
+    border-radius: 10px;   
+}
+
+.title-cards{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Roboto';
+    line-height: 28px;
+    color: #222222;
+}
+
+.dropdown{
+    width: 351px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #C1C1C1;
+    border-radius: 4px;
+}
+
+#select-fruits{
+    padding-right: 9.5rem;
+}
+
+#first-button{
+    position: relative;
+    bottom: -1rem;
+    width: 205px;
+    height: 42px;
+    background: #984BD6;
+    border-radius: 50px;
+}
+
+#second-button{
+    position: relative;
+    width: 117px;
+    height: 36px;
+    left: 180px;
+    bottom: -22rem;
+    background: #6DA2F2;
+    border-radius: 50px;
+}

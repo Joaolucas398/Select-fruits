@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Select Fruits</title>
+  </head>
+  <body onload="preencherDropdown()">
+    <sections>
+      <div class="first-card">
+        <p class="title-cards">Bem vindo á Feira de frutas</p>
+        <p id="select-fruits">Escolha suas frutas preferidas:</p>
+        <form name="form1" id="form1" action="/action_page.php">
+          <select class="dropdown" name="subject" id="frutas">
+            <option value="">Selecione...</option>
+          </select>
+        </form>
+        <button id="first-button">Enviar frutas para sacola</button>
+      </div>
+      <div class="second-card">
+        <p class="title-cards">Minha Sacola de frutas</p>
+        <button id="second-button">Limpar sacola</button>
+      </div>
+    </sections>
+
+    <script src="index.js"></script>
+  </body>
+</html>
