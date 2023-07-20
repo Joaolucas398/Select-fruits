@@ -20,20 +20,20 @@ function preencherDropdown() {
   }
 
   //Criando e exibindo a lista de frutas selecinadas
-  const frutasSelecionadas = [];
+  let frutasSelecionadas = [];
   var ulElement = document.getElementById("frutasSelecionadas");
 
   select.addEventListener("change", function () {
-    const opcoesSelecionadas = select.selectedOptions;
+    let opcoesSelecionadas = select.selectedOptions;
     ulElement.innerHTML = "";
 
     for (var i = 0; i < opcoesSelecionadas.length; i++) {
-      const frutaSelecionada = opcoesSelecionadas[i].value;
+      let frutaSelecionada = opcoesSelecionadas[i].value;
       frutasSelecionadas.push(frutaSelecionada);
     }
 
     for (var i = 0; i < frutasSelecionadas.length; i++) {
-      const index = i;
+      let index = i;
       let cardFrutas = document.createElement("li");
       cardFrutas.textContent = frutasSelecionadas[i];
 
@@ -42,6 +42,7 @@ function preencherDropdown() {
       removeButton.addEventListener("click", function () {
         frutasSelecionadas.splice(index, 1);
         cardFrutas.remove();
+        frutasSelecionadas.length = 0;
       });
 
       ulElement.appendChild(cardFrutas);
