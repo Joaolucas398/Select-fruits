@@ -9,16 +9,25 @@
   </head>
   <body onload="preencherDropdown()">
     <sections>
+
       <div class="first-card">
         <p class="title-cards">Bem vindo á Feira de frutas</p>
         <p id="select-fruits">Escolha suas frutas preferidas:</p>
+
         <form name="form1" id="form1" ">
           <select class="dropdown" id="frutas"> 
+            <option value="" disabled selected>Selecione...</option>
           </select>
         </form>
-        <ul id="frutasSelecionadas"></ul>
+
+        <div id="ulButtons">
+          <ul id="frutasSelecionadas"></ul>
+        </div>
+
         <button id="first-button">Enviar frutas para sacola</button>
+        
       </div>
+
       <div class="second-card">
         <p class="title-cards">Minha Sacola de frutas</p>
         <button id="second-button">Limpar sacola</button>

@@ -51,6 +51,7 @@ sections {
 
 li {
   display: flex;
+  justify-content: space-between;
   width: 336px;
   height: 26px;
   padding: 7px 0 0 15px;
@@ -84,4 +85,18 @@ li {
   bottom: -22rem;
   background: #6da2f2;
   border-radius: 50px;
+}
+
+
+#ulButtons button{
+  width: 35px;
+  position: relative;
+  height: 36px;
+  color: red ;
+  border-color: red;
+  background: #f1f1f100;
+  border-radius: 50px;
+  left: 3rem;
+  align-self: flex-end;
+  cursor: pointer;
 }
