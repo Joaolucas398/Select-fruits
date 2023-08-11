@@ -3,9 +3,32 @@
   padding: 0;
 }
 
-sections {
-  display: flex;
-  justify-content: center;
+.sectionsContainer {
+  display: grid ;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center; 
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .sectionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .second-card{
+    margin-top: 50px;
+  }
+}
+
+
+.dropdown {
+  width: 351px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
 }
 
 .first-card {
@@ -18,7 +41,15 @@ sections {
   background: #e0e0e0;
   border: 1px solid #c1c1c1;
   border-radius: 10px;
-  margin-right: 25px;
+}
+
+#first-button {
+  width: 205px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #984bd6;
+  cursor: pointer;
 }
 
 .second-card {
@@ -26,11 +57,21 @@ sections {
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
-  width: 500px;
+  width: 600px;
   height: 484px;
   background: #646464;
   border: 1px solid #c1c1c1;
   border-radius: 10px;
+}
+
+#second-button {
+  position: relative;
+  width: 117px;
+  height: 36px;
+  left: 180px;
+  bottom: -22rem;
+  background: #6da2f2;
+  border-radius: 50px;
 }
 
 .title-cards {
@@ -41,13 +82,6 @@ sections {
   color: #222222;
 }
 
-.dropdown {
-  width: 351px;
-  height: 40px;
-  background: #ffffff;
-  border: 1px solid #c1c1c1;
-  border-radius: 4px;
-}
 
 li {
   display: flex;
@@ -63,30 +97,6 @@ li {
   color: #222222;
   list-style-type: none;
 }
-
-#select-fruits {
-  padding-right: 9.5rem;
-}
-
-#first-button {
-  width: 205px;
-  height: 42px;
-  flex-shrink: 0;
-  border-radius: 50px;
-  background: #984bd6;
-  cursor: pointer;
-}
-
-#second-button {
-  position: relative;
-  width: 117px;
-  height: 36px;
-  left: 180px;
-  bottom: -22rem;
-  background: #6da2f2;
-  border-radius: 50px;
-}
-
 
 #ulButtons button{
   width: 35px;
